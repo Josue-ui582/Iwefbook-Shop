@@ -1,0 +1,98 @@
+[
+    {
+        "id" : "1", 
+        "src" : "IMG_0422.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "2", 
+        "src" : "IMG_0423.JPG",
+        "size": "6xl",
+       "price" : "4000 CFA",
+       "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "3", 
+        "src" : "IMG_0424.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "4", 
+        "src" : "IMG_0425.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "5", 
+        "src" : "IMG_0427.JPG",
+        "size": "6xl",
+       "price" : "4000 CFA",
+       "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "6", 
+        "src" : "IMG_0429.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "7", 
+        "src" : "IMG_0430.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "8", 
+        "src" : "IMG_0431.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "9", 
+        "src" : "IMG_0432.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "10", 
+        "src" : "IMG_0433.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "11", 
+        "src" : "IMG_0435.JPG",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    },
+    {
+        "id" : "12", 
+        "src" : "IMG_0676.jpg",
+        "size": "6xl",
+        "price" : "4000 CFA",
+        "available": "Disponible maintenant",
+        "detail": "Voir les détails"
+    }
+]

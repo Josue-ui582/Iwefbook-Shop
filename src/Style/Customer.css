@@ -1,0 +1,26 @@
+.client{
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 5rem;
+}
+
+.service{
+    color: blueviolet;
+}
+
+.preoccu{
+    color: rgb(255, 189, 118);
+}
+
+.link {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.link:hover {
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    color: black;
+}

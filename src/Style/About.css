@@ -1,0 +1,17 @@
+.container_1{
+   margin-top: 8rem;
+   margin-bottom: 5rem;
+}
+
+.container_2{
+    width: 65%;
+    margin: 0 auto;
+    padding: 2rem;
+    border:  0.5px solid rgb(65, 65, 217);
+    border-radius: 50px 0 50px 0;
+    margin-top: 2rem;
+}
+
+.about_header{
+    color: rgb(65, 65, 217);
+}

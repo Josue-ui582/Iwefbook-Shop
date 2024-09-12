@@ -1,0 +1,9 @@
+nav{
+    background-color: white;
+    box-shadow: 0 0 3px 0 gray;
+    z-index: 100;
+}
+
+.height{
+    height: 4rem;
+}

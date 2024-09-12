@@ -1,0 +1,4 @@
+section > div > .quality:hover {
+    border: 1px solid gray;
+    transition: 0.5s ease;
+}
