@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Cart from "./Cart";
 import '../Style/Nav.css'
 
 
@@ -27,18 +28,19 @@ const NavBar = () => {
                 isOpen ? "top-16 flex flex-col items-center justify-center h-[100vh] gap-8" : "-top-96"
                     } lg:top-0`}>
 
-                    <li>
+                    <li className="relative">
                         <Link to="/" className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Accueil</Link>
                     </li>
-                    <li>
+                    <li className="relative">
                         <Link to="/about" className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">A propos</Link>
                     </li>
-                    <li>
+                    <li className="relative">
                         <Link className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Catalogues</Link>
-                    </li><li>
-                        <Link to="/amazone" className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Commander depuis Amazon</Link>
                     </li>
-                    <li>
+                    <li className="relative">
+                        <Cart />
+                    </li>
+                    <li className="relative">
                         <Link to='/contact' className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Contactez-nous</Link>
                     </li>
                 </ul>

@@ -1,0 +1,36 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1s ease, opacity 1s ease;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 999;
+    width: 200px;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-item:hover{
+    border: none;
+}
+
+.dropdown.active {
+    max-height: 150px;
+    opacity: 1;
+}

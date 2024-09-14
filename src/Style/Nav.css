@@ -4,6 +4,10 @@ nav{
     z-index: 100;
 }
 
+nav > ul > li{
+    position: relative;
+}
+
 .height{
     height: 4rem;
 }
