@@ -1,26 +1,89 @@
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: rgb(112, 112, 252);
+    padding: 10px;
+    border-radius: 20px;
+    height: 450px;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: rgb(112, 112, 252);
+    padding: 10px;
+    border-radius: 20px;
+    height: 450px;
+}
+
 .client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_img{
+    border-radius: 100%;
+    width: 130px;
+    height: 140px;
+}
+
+.second_img{
+    border-radius: 100%;
+    width: 130px;
+    height: 140px;
+}
+
+.costumer_section{
+    width: 30%;
     margin: 0 auto;
-    width: 60%;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
-.service{
-    color: blueviolet;
+.client_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.preoccu{
-    color: rgb(255, 189, 118);
+.client_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.link {
-    background-color: blueviolet;
-    color: white;
-    border-radius: 10px;
-    transition: 0.5s ease;
+@media (max-width : 380px) {
+    .costumer_section{
+        width: 90%;
+    }
+    .first{
+        height: 600px;
+    }
 }
 
-.link:hover {
-    background-color: transparent;
-    border: 1px solid blueviolet;
-    color: black;
+@media (max-width : 480px) {
+    .costumer_section{
+        width: 90%;
+    }
+    .first{
+        height: 550px;
+    }
+}
+
+@media (max-width : 830px) {
+    .costumer_section{
+        width: 70%;
+    }
+}
+
+@media (max-width : 1050px) {
+    .costumer_section{
+        width: 70%;
+    }
 }
