@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Cart from "./Cart";
+import Activities from "./Activity";
 import '../Style/Nav.css'
 
 
@@ -38,7 +38,7 @@ const NavBar = () => {
                         <Link className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Catalogues</Link>
                     </li>
                     <li className="relative">
-                        <Cart />
+                        <Activities />
                     </li>
                     <li className="relative">
                         <Link to='/contact' className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Contactez-nous</Link>

@@ -5,7 +5,7 @@ import '../Style/Cart.css'
 
 
 
-const Cart = () => {
+const Activities = () => {
     const [showSubLinks, setShowSubLinks] = useState(false);
 
     function handleCartClick () {
@@ -22,4 +22,4 @@ const Cart = () => {
     );
 }
 
-export default Cart
+export default Activities
