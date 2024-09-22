@@ -16,7 +16,7 @@ const SecondCostumer = () => {
             <div className="client_2">
                 <img src="Photo 2.jpg" alt="" className="second_img" />
                 <User2
-                name='Client'
+                name='Axelle Keren'
                 description="Iwefebooks offre des services de qualité, ils sont très flexibles et s'adaptent à chaque client. Ils proposent une très grande variété de bouquins allant du développement personnel aux arlequins sans oublier les romans de fiction."
                 />
             </div>

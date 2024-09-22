@@ -13,7 +13,7 @@ const validateEmail = (email) => {
 
 const NewsletterForm  = () => {
     const [email, setEmail] = useState('')
-    const [notification, setNotification] = useState(null)
+    const [notification, setNotification] = useState(null);
 
     const handleChange = (e) => {
         setEmail(e.target.value)
@@ -60,7 +60,7 @@ const NewsletterForm  = () => {
                     type={notification.type}
                     className="mt-4xl"
                 />
-      )}
+            )}
         </div>
     )
 }

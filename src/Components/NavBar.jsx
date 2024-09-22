@@ -35,15 +35,19 @@ const NavBar = () => {
                         <Link to="/about" className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">A propos</Link>
                     </li>
                     <li className="relative">
-                        <Link className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Catalogues</Link>
+                        <Activities />
                     </li>
                     <li className="relative">
-                        <Activities />
+                        <Link className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Commander depuis amazon</Link>
                     </li>
                     <li className="relative">
                         <Link to='/contact' className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Contactez-nous</Link>
                     </li>
                 </ul>
+            </div>
+
+            <div>
+                <span class="material-symbols-outlined">shopping_cart</span>
             </div>
 
             <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>

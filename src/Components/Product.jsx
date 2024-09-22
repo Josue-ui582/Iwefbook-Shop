@@ -1,12 +1,20 @@
-import React, {useState} from "react";
-import products from '../Data.json'
+import React, { useState } from "react";
+import products from '../Data.json';
 import { Link } from "react-router-dom";
-import '../Style/Product.css'
-
+import '../Style/Product.css';
 
 const Product = () => {
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
-    return(
+    const handleShowDetails = (product) => {
+        setSelectedProduct(product);
+    };
+
+    const handleCloseDetails = () => {
+        setSelectedProduct(null);
+    };
+
+    return (
         <section>
             <div>
                 <p className="mt-2xl text-center mb-3xl lg:text-5xl md:text-3xl text-3xl">Nos Produits</p>
@@ -25,7 +33,11 @@ const Product = () => {
                                     </div>
                                     <div>
                                         <p className="font-semibold available">{product.available}</p>
-                                        <Link className="p-1 rounded-xl detail">{product.detail}</Link>
+                                        <Link 
+                                            className="p-1 rounded-xl detail" 
+                                            onClick={() => handleShowDetails(product)}>
+                                            Voir les détails
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -35,9 +47,20 @@ const Product = () => {
                 <p className="flex justify-center mt-2xl">
                     <Link className="p-2 rounded-xl border-solid border-2 view">Voir plus</Link>
                 </p>
+
+                {/* Vérifiez si selectedProduct n'est pas null avant d'accéder à ses propriétés */}
+                {selectedProduct && (
+                    <div className="product-details-overlay">
+                        <div className="product-details">
+                            <h2>{selectedProduct.title}</h2>
+                            <p>{selectedProduct.description}</p>
+                            <button onClick={handleCloseDetails}>Fermer</button>
+                        </div>
+                    </div>
+                )}
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Product
+export default Product;
