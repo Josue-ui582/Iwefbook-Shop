@@ -2,16 +2,18 @@ import React from 'react'
 import '../Style/Contact.css'
 import GetInTouch from '../Components/GetInTouch'
 import ContactForm from '../Components/ContactForm'
+import NavBar from '../Components/NavBar'
 
 const ContactUs = () => {
     return(
         <section>
-            <div className='h-6xl w-100 contact flex justify-center items-center'>
+            <NavBar />
+            <div className='h-6xl w-100 contact flex justify-center items-center overflow-hidden'>
                 <div>
                     <p className='text-white text-3xl'>#Contactez-nous</p>
                 </div>
             </div>
-            <div className='flex justify-center gap-4 mt-12'>
+            <div className='flex justify-center gap-4 mt-12 overflow-hidden'>
                <div>
                     <GetInTouch />
                </div>

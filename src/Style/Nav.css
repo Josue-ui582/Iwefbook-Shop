@@ -11,3 +11,24 @@ nav > ul > li{
 .height{
     height: 4rem;
 }
+
+.cart-container {
+    position: relative;
+}
+
+.cart-icon {
+    font-size: 24px;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(249, 92, 92);
+    color: white;
+    border-radius: 50%;
+    padding: 1px 5px;
+    font-size: 12px;
+    font-weight: bold;
+}

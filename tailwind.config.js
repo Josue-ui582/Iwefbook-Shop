@@ -42,7 +42,7 @@ export default {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
-      'blue': '#1d4ed8',
+      'blue': 'rgb(96, 96, 195)',
       'red': '#e11d48',
       'gray-100': '#f3f3f3'
     },

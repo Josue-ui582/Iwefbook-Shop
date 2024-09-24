@@ -12,7 +12,7 @@ const Logo = ({alt, src}) => {
     )
 }
 
-const NavBar = () => {
+const NavBar = ({ cartCount }) => {
 
     // Gestion de l'état
     const [isOpen, setIsOpen] = useState(false)
@@ -23,7 +23,7 @@ const NavBar = () => {
                 <Logo src='Logo.jpeg' alt='Iwefe Logo' />
             </div>
 
-            <div>
+            <div className="flex">
                 <ul className={`lg:flex md:items-center lg:space-x-6 absolute lg:static bg-white lg:bg-transparent w-full left-0 lg:w-auto transition-all duration-500 ease-in-out ${
                 isOpen ? "top-16 flex flex-col items-center justify-center h-[100vh] gap-8" : "-top-96"
                     } lg:top-0`}>
@@ -44,16 +44,22 @@ const NavBar = () => {
                         <Link to='/contact' className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Contactez-nous</Link>
                     </li>
                 </ul>
-            </div>
-
-            <div>
-                <span class="material-symbols-outlined">shopping_cart</span>
+                <div className="cart-container">
+                    <Link>
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                            {
+                                cartCount > 0 && (
+                                    <span className="cart-count">{cartCount}</span>
+                                )
+                            }
+                    </Link>
+                </div>
             </div>
 
             <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? (
                 <svg
-                    className="w-6 h-6 cursor-pointer"
+                    className="h-6 cursor-pointer"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

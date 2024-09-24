@@ -2,6 +2,10 @@ header{
     background-color: rgb(255, 246, 246);
 }
 
+.titre{
+    color: rgb(96, 96, 195);
+}
+
 @media (max-width : 376px) {
     .header{
         height: 70vh;

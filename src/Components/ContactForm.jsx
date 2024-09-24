@@ -25,10 +25,10 @@ const ContactForm = () => {
       <MyFormItemGroup prefix={['user']}>
         <MyFormItemGroup prefix={['name']}>
           <div className='flex gap-4'>
-            <MyFormItem name="firstName" label="First Name">
+            <MyFormItem name="firstName" label="Nom">
                 <Input />
             </MyFormItem>
-            <MyFormItem name="lastName" label="Last Name">
+            <MyFormItem name="lastName" label="Prénom">
                 <Input />
             </MyFormItem>
           </div>
