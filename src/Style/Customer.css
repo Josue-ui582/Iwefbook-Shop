@@ -3,10 +3,10 @@
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
-    background-color: rgb(112, 112, 252);
+    background-color: rgb(254, 244, 244);
     padding: 10px;
     border-radius: 20px;
-    height: 450px;
+    height: 480px;
 }
 
 .second{
@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid transparent;
-    background-color: rgb(112, 112, 252);
+    background-color: rgb(254, 244, 244);
     padding: 10px;
     border-radius: 20px;
     height: 480px;
@@ -27,63 +27,39 @@
 }
 
 .first_img{
-    border-radius: 100%;
-    width: 130px;
-    height: 140px;
+    border-radius: 5px;
+    width: 900px;
+    height: 350px;
 }
 
 .second_img{
-    border-radius: 100%;
-    width: 130px;
-    height: 140px;
+    border-radius: 5px;
+    width: 700px;
+    height: 350px;
 }
 
 .costumer_section{
-    width: 30%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 6rem;
 }
 
 .client_1{
     display: flex;
-    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+}
+
+
+.ffhhf{
+    color: #151515;
 }
 
 .client_2{
     display: flex;
-    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
 
-@media (max-width : 380px) {
-    .costumer_section{
-        width: 90%;
-    }
-    .first{
-        height: 600px;
-    }
-}
-
-@media (max-width : 480px) {
-    .costumer_section{
-        width: 90%;
-    }
-    .first{
-        height: 550px;
-    }
-}
-
-@media (max-width : 830px) {
-    .costumer_section{
-        width: 70%;
-    }
-}
-
-@media (max-width : 1050px) {
-    .costumer_section{
-        width: 70%;
-    }
-}

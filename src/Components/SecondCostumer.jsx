@@ -4,8 +4,10 @@ import '../Style/Customer.css'
 function User2({name, description}) {
     return(
         <>
-            <h3 className="font-bold text-xl text-white">{name}</h3>
-            <p className="text-base text-white">{description}</p>
+            <div className="flex flex-col items-center justify-center gap-10">
+                <h3 className="font-bold text-xl text-blue">{name}</h3>
+                <p className="text-base text-black">{description}</p>
+            </div>
         </>
     )
 }
