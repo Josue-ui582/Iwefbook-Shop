@@ -1,0 +1,66 @@
+.contact {
+    background-color: rgb(94, 94, 207);
+}
+
+.email {
+    background-color: rgb(252, 249, 249);
+}
+
+@media screen and (min-width : 340px) and (max-width: 414px) {
+    section {
+        height: 80px;
+    }
+    .contact > div > p{
+        font-size: 30px;
+    }
+    .getintouch_container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .getintouch_container > h3{
+        font-size: 1.4rem;
+    }
+    .email_section{
+        padding: 2px;
+        gap: 2px;
+        width: 100%;
+    }
+    .email_section > span{
+        font-size: 1.953rem;
+    }
+    .contact_section{
+        padding: 2px;
+        gap: 2px;
+        width: 100%;
+    }
+    .contact_section > span{
+        font-size: 1.953rem;
+    }
+    .contact_fast{
+        width: 100%;
+    }
+    .contact_form{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 430px) {
+    .contact > div > p{
+        font-size: 30px;
+    }
+    .getintouch_container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 433px) and (max-width: 550px) {
+    .contact > div > p{
+        font-size: 30px;
+    }
+    .getintouch_container{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
