@@ -6,7 +6,6 @@ import Notification from "./Notification";
 
 
 const validateEmail = (email) => {
-    // Expression régulière pour vérifier le format d'une adresse email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 };
@@ -51,7 +50,7 @@ const NewsletterForm  = () => {
                     required
                     className="p-2 outline-none rounded-xl"
                 />
-                <button type="submit" className="ml-4 p-2 rounded-xl">S'inscrire</button>
+                <button type="submit" className="ml-4 p-2 rounded-xl text-white">S'inscrire</button>
             </form>
             {notification && (
                 <Notification

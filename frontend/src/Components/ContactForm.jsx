@@ -1,87 +1,104 @@
-import React from 'react';
-import { Button, Form, Input } from 'antd';
-
-const MyFormItemContext = React.createContext([]);
-
-function toArr(str) {
-  return Array.isArray(str) ? str : [str];
-}
-
-const MyFormItemGroup = ({ prefix, children }) => {
-  const prefixPath = React.useContext(MyFormItemContext);
-  const concatPath = React.useMemo(() => [...prefixPath, ...toArr(prefix)], [prefixPath, prefix]);
-  return <MyFormItemContext.Provider value={concatPath}>{children}</MyFormItemContext.Provider>;
-};
-
-const MyFormItem = ({ name, ...props }) => {
-  const prefixPath = React.useContext(MyFormItemContext);
-  const concatName = name !== undefined ? [...prefixPath, ...toArr(name)] : undefined;
-  return <Form.Item name={concatName} {...props} />;
-};
+import React, { useState } from 'react';
 
 const ContactForm = () => {
-  const handleSubmit = (values) => {
-    fetch('http://localhost:5000/api/contacts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        firstName: values.user.name.firstName,
-        lastName: values.user.name.lastName,
-        email: values.user.email,
-        message: values.user.message,
-      }),
-    })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Erreur lors de la soumission du formulaire');
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log('Succès:', data);
-      alert('Formulaire soumis avec succès !');
-    })
-    .catch((error) => {
-      console.error('Erreur:', error);
-      alert('Échec de la soumission du formulaire');
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    message: ''
+  });
+
+  const [statusMessage, setStatusMessage] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
     });
   };
 
-  const onFinish = (values) => {
-    handleSubmit(values);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatusMessage('Message envoyé avec succès !');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        setStatusMessage(`Erreur : ${data.error}`);
+      }
+    } catch (error) {
+      setStatusMessage('Erreur lors de l\'envoi des données.');
+    }
   };
 
   return (
-    <Form name="form_item_path" layout="vertical" onFinish={onFinish} className="contact_form">
-      <MyFormItemGroup prefix={['user']}>
-        <MyFormItemGroup prefix={['name']}>
-          <div className="flex gap-4">
-            <MyFormItem name="firstName" label="Nom">
-              <Input />
-            </MyFormItem>
-            <MyFormItem name="lastName" label="Prénom">
-              <Input />
-            </MyFormItem>
+    <div>
+      <form onSubmit={handleSubmit} className='contact_form'>
+        <div className='flex gap-6'>
+          <div className='flex flex-col'>
+            <label>Prénom</label>
+            <input
+              type="text"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+              className='outline-none text-base border rounded pl-1'
+            />
           </div>
-          <MyFormItem name="email" label="Email">
-            <Input />
-          </MyFormItem>
-        </MyFormItemGroup>
-        <MyFormItem name="message" label="Message">
+          <div className='flex flex-col'>
+            <label>Nom</label>
+            <input
+              type="text"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+              className='outline-none text-base border rounded pl-1'
+            />
+          </div>
+        </div>
+        <div className='flex flex-col gap-4'>
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className='outline-none text-base border rounded pl-1'
+          />
+        </div>
+        <div className='flex flex-col gap-4'>
+          <label>Message</label>
           <textarea
-            id="message"
-            className="w-100 border border-solid rounded-lg px-2 h-40 outline-none"
-            placeholder="Écrivez un texte ici"
-          ></textarea>
-        </MyFormItem>
-      </MyFormItemGroup>
-
-      <Button type="primary" htmlType="submit">
-        Submit
-      </Button>
-    </Form>
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            className='outline-none text-base border rounded pl-1'
+          />
+        </div>
+        <button type="submit" className='mt-3 rounded p-2 bg-blue hover:text-black text-white'>Envoyer</button>
+      </form>
+      {statusMessage && <p className='mt-2 font-bold text-green'>{statusMessage}</p>}
+    </div>
   );
 };
 

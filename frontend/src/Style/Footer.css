@@ -1,17 +1,17 @@
 footer{
-    background-color: rgb(255, 242, 242);
+    background-color: #009fe2;
 }
 
 button{
-    background-color: blueviolet;
+    background-color: #009fe2;
     color: white;
     transition: 0.5s ease;
 }
 
 button:hover{
     background-color: transparent;
-    color: black;
-    border: 1px solid blueviolet;
+    color: white;
+    border: 1px solid #009fe2;
 }
 
 .notification{
@@ -24,11 +24,17 @@ button:hover{
 
 .close-btn{
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color: #009fe2;
+    color: white;
 }
 
 .rapide{
     font-size: 2rem;
     font-weight: 600;
     color: rgb(61, 61, 61);
+}
+
+.socials{
+    border-radius: 100%;
+    
 }

@@ -42,8 +42,8 @@ export default {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
-      'blue': 'rgb(96, 96, 195)',
-      'red': '#e11d48',
+      'blue': '#009fe2',
+      'red': '#e9611a',
       'gray-100': '#f3f3f3',
       'black': '#151515'
     },
