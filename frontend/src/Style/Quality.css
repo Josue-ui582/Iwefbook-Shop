@@ -2,3 +2,10 @@ section > div > .quality:hover {
     border: 1px solid gray;
     transition: 0.5s ease;
 }
+
+@media screen and (min-width : 340px) and (max-width: 414px) {
+    .qualiti{
+        height: 76vh;
+        margin-top: 7rem;
+    }
+}

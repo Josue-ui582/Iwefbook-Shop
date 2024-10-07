@@ -3,7 +3,7 @@ import '../../src/Style/About.css'
 
 const AboutSection = () => {
     return(
-        <section className="flex justify-center items-center">
+        <section className="flex justify-center items-center about">
             <div className="container_1">
                 <h1 className="font-bold about_header text-center">QUI SOMMES NOUS ?</h1>
                 <div className="container_2">

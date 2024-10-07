@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Style/Contact.css'
 import GetInTouch from '../Components/GetInTouch'
-import ContactForm from '../Components/ContactForm'
+import ContactForme from '../Components/ContactForm'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 
@@ -19,7 +19,7 @@ const ContactUs = () => {
                     <GetInTouch />
                </div>
                <div>
-                    <ContactForm />
+                    <ContactForme />
                </div>
             </div>
             <Footer />

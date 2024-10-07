@@ -9,8 +9,8 @@ const Img = ({src, alt}) => {
 
 const Quality = () => {
     return(
-        <section className="text-center">
-            <h2 className="mb-6 lg:text-4xl md:text-3xl">Pourquoi nous choisir ?</h2>
+        <section className="text-center qualiti">
+            <h2 className="mt-2xl text-center mb-3xl lg:text-5xl md:text-3xl text-3xl">Pourquoi nous choisir ?</h2>
             <div className="flex flex-wrap gap-6 justify-center items-center md:flex-wrap md:gap-2">
                 <div className="border-2 lg:p-8 p-2 rounded-lg quality">
                     <Img src="livraison.png" alt="f2"/>

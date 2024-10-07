@@ -10,3 +10,15 @@ header{
 .titre{
     color: #009fe2;
 }
+
+.header-{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media screen and (min-width : 340px) and (max-width: 414px) {
+    .header- > h1{
+        font-size: 3rem;
+    }
+}

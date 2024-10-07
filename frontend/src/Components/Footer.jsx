@@ -12,7 +12,7 @@ const Logo = ({alt, src}) => {
 
 const Footer = () => {
     return(
-        <footer className="w-full">
+        <footer className="w-full footer">
             <div className=" mt-3xl pt-8 px-8 lg:flex justify-between items-start">
                 <div>
                     <div className="w-full">
@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
             </div>
             <SocialsMedia />
-            <p className="text-center text-white">@2024 <Link to='https://github.com/Josue-ui582' className="text-underline"> powered by Josué</Link> | Tous droits réservés</p>
+            <p className="text-center text-white mt-4">@2024 <Link to='https://github.com/Josue-ui582' className="text-underline"> powered by Josué</Link> | Tous droits réservés</p>
         </footer>
     )
 }

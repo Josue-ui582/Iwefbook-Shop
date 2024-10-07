@@ -1,11 +1,10 @@
 import React from "react";
 import '../Style/Customer.css'
 
-function User2({name, description}) {
+function User2({description}) {
     return(
         <>
             <div className="flex flex-col items-center justify-center gap-10">
-                <h3 className="font-bold text-xl text-blue">{name}</h3>
                 <p className="text-base text-black">{description}</p>
             </div>
         </>
@@ -15,12 +14,17 @@ function User2({name, description}) {
 const SecondCostumer = () => {
     return(
         <div className="second">
+            <div>
+                <span className="material-symbols-outlined text-7xl text-blue">sentiment_content</span>
+            </div>
             <div className="client_2">
-                <img src="Photo 2.jpg" alt="" className="second_img" />
                 <User2
-                name='Axelle Keren'
                 description="Iwefebooks offre des services de qualité, ils sont très flexibles et s'adaptent à chaque client. Ils proposent une très grande variété de bouquins allant du développement personnel aux arlequins sans oublier les romans de fiction."
                 />
+            </div>
+            <div className="flex gap-6 items-center">
+                <img src="Photo 2.jpg" alt="" className="second_img" />
+                <p className="font-bold text-blue text-2xl">Axelle Keren</p>
             </div>
         </div>
     )

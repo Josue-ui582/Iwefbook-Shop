@@ -38,7 +38,7 @@ const NavBar = ({ cartCount }) => {
                         <Activities />
                     </li>
                     <li className="relative">
-                        <Link className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Commander depuis amazon</Link>
+                        <Link to="/amazone" className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Commander depuis amazon</Link>
                     </li>
                     <li className="relative">
                         <Link to='/contact' className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Contactez-nous</Link>

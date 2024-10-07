@@ -2,6 +2,8 @@ footer{
     background-color: #009fe2;
 }
 
+.footer
+
 button{
     background-color: #009fe2;
     color: white;
@@ -36,5 +38,10 @@ button:hover{
 
 .socials{
     border-radius: 100%;
-    
+}
+
+@media screen and (min-width : 340px) and (max-width: 414px) {
+    .footer{
+        height: 82vh;
+    }
 }

@@ -115,6 +115,16 @@
   .product-container{
     margin-bottom: 1.5rem;
   }
+
+  .product-{
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .product{
+    margin-top: 14rem;
+    height: 320vh;
+  }
 }
 
 @media screen and (min-width: 415px) and (max-width: 430px) {

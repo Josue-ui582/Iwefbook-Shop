@@ -1,23 +1,25 @@
 .first{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid transparent;
-    background-color: rgb(254, 244, 244);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
     padding: 10px;
     border-radius: 20px;
-    height: 480px;
+    height: 380px;
+    border: 1px solid #009fe2;
 }
 
 .second{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid transparent;
-    background-color: rgb(254, 244, 244);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
     padding: 10px;
     border-radius: 20px;
-    height: 480px;
+    height: 380px;
+    border: 1px solid #009fe2;
 }
 
 .client{
@@ -27,15 +29,15 @@
 }
 
 .first_img{
-    border-radius: 5px;
-    width: 900px;
-    height: 350px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 .second_img{
-    border-radius: 5px;
-    width: 700px;
-    height: 350px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
 }
 
 .costumer_section{
@@ -63,3 +65,16 @@
     align-items: center;
 }
 
+@media screen and (min-width : 340px) and (max-width: 414px) {
+    .costumer_section{
+        height: 60vh;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .first{
+        height: 70vh;
+    }
+    .second{
+        height: 50vh;
+    }
+}

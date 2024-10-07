@@ -15,8 +15,8 @@ const Product = ({ onAddToCart }) => {
     };
 
     return (
-        <section>
-            <div>
+        <section className="product">
+            <div className="product-">
                 <p className="mt-2xl text-center mb-3xl lg:text-5xl md:text-3xl text-3xl">Nos Produits</p>
                 <div className="lg:flex lg:overflow-hidden lg:justify-center md:flex md:overflow-hidden md:justify-center flex overflow-hidden justify-center">
                     <div className="grid lg:grid-cols-4 lg:gap-8 md:gap-2 md:grid-cols-3 grid-cols-2 ">

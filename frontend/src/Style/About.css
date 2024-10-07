@@ -1,3 +1,7 @@
+.about{
+    height: 200vh;
+}
+
 .container_1{
    margin-top: 8rem;
    margin-bottom: 5rem;
@@ -14,4 +18,13 @@
 
 .about_header{
     color: #009fe2;
+}
+
+@media screen and (min-width : 340px) and (max-width: 414px) {
+    .about{
+        height: 280vh;
+    }
+    .container_2{
+        width: 95%;
+    }
 }
