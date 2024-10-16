@@ -5,7 +5,7 @@ section > div > .quality:hover {
 
 @media screen and (min-width : 340px) and (max-width: 414px) {
     .qualiti{
-        height: 76vh;
+        height: 110vh;
         margin-top: 7rem;
     }
 }

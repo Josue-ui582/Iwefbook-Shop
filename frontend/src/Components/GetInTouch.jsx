@@ -1,6 +1,8 @@
 import React from "react";
 import '../Style/Contact.css'
 import SocialsMedia from "./SocialsMedia";
+import { CiMail } from "react-icons/ci";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const GetInTouch = () => {
     return(
@@ -10,7 +12,7 @@ const GetInTouch = () => {
                 <div className="flex gap-4 mt-6 overflow-hidden contact_fast flex-wrap">
                     <a href="mailto:hounhouijosue1@gmail.com">
                         <div className="flex items-center gap-4 p-4 email rounded hover:shadow-md overflow-hidden email_section">
-                            <span className="material-symbols-outlined text-5xl ">forward_to_inbox</span>
+                        <CiMail />
                             <div>
                                 <p className="font-bold">Email</p>
                                 <p>iwefebooks@gmail.com</p>
@@ -20,7 +22,7 @@ const GetInTouch = () => {
 
                     <a href="#">
                         <div className="flex items-center gap-4 p-4 email rounded hover:shadow-md overflow-hidden contact_section">
-                        <span class="material-symbols-outlined text-5xl">call</span>
+                        <FaPhoneAlt />
                             <div>
                                 <p className="font-bold">Téléphone</p>
                                 <p>+229 69 73 97 97</p>
@@ -30,7 +32,7 @@ const GetInTouch = () => {
                 </div>
                 <div className="mt-6 flex items-center">
                     <p>Réseaux sociaux :</p>
-                    <span><SocialsMedia /></span>
+                    <SocialsMedia />
                 </div>
             </div>
     )

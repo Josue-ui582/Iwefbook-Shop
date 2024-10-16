@@ -2,8 +2,25 @@
     background-color: #009fe2;
 }
 
+.contact_container{
+    width: 95%;
+    margin: 0 auto;
+}
+
 .email {
     background-color: rgb(252, 249, 249);
+}
+
+.email_section{
+    width: 100%;
+}
+
+.contact_section{
+    width: 100%;
+}
+
+.name_section .flex-col {
+    flex: 1;
 }
 
 @media screen and (min-width : 340px) and (max-width: 414px) {

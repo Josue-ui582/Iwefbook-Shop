@@ -18,8 +18,8 @@ const Home = () => {
         <section>
             <NavBar cartCount={cartCount} />
             <Header />
-            <Quality />
             <Product onAddToCart={handleAddToCart} />
+            <Quality />
             <CostumerReview />
             <Footer />
         </section>

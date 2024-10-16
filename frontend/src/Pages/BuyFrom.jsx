@@ -6,7 +6,9 @@ const BuyFrom = () => {
     return(
         <section>
             <NavBar />
-            <BuyFrome />
+            <div className="form_to_buy">
+                <BuyFrome />
+            </div>
         </section>
     )
 }
