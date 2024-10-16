@@ -10,7 +10,7 @@ const GetInTouch = () => {
                 <h3 className="text-3xl font-bold">Prenons contact</h3>
                 <p>Vous avez une préoccupation particulière, une question, n'hésitez pas à nous contacter :</p>
                 <div className="flex gap-4 mt-6 overflow-hidden contact_fast flex-wrap">
-                    <a href="mailto:hounhouijosue1@gmail.com">
+                    <a href="mailto:iwefebooks@gmail.com">
                         <div className="flex items-center gap-4 p-4 email rounded hover:shadow-md overflow-hidden email_section">
                         <CiMail />
                             <div>
@@ -20,7 +20,7 @@ const GetInTouch = () => {
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="https://wa.me/message/DVKKQIJVGIVVE1" target="blanck">
                         <div className="flex items-center gap-4 p-4 email rounded hover:shadow-md overflow-hidden contact_section">
                         <FaPhoneAlt />
                             <div>

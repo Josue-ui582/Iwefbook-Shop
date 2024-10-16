@@ -40,8 +40,20 @@ button:hover{
     border-radius: 100%;
 }
 
-@media screen and (min-width : 340px) and (max-width: 414px) {
+@media screen and (min-width : 340px) and (max-width: 390px) {
     .footer{
         height: 82vh;
+    }
+}
+
+@media screen and (min-width : 390px) and (max-width: 414px) {
+    .footer{
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 430px) {
+    .footer{
+        height: 60vh;
     }
 }

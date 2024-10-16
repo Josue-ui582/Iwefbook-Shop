@@ -3,6 +3,7 @@ import NewsletterForm from "./NewsletterForm";
 import '../Style/Footer.css'
 import { Link } from "react-router-dom";
 import SocialsMedia from "./SocialsMedia";
+import Activities from "./Activity";
 
 const Logo = ({alt, src}) => {
     return(
@@ -27,19 +28,19 @@ const Footer = () => {
                             <Link to="/" className="hover:underline p-2 rounded duration-500 ">Accueil</Link>
                         </li>
                         <li className="mb-2 text-white">
-                            <Link className="hover:underline p-2 rounded duration-500 ">A propos</Link>
+                            <Link to="/about" className="hover:underline p-2 rounded duration-500 ">A propos</Link>
+                        </li>
+                        <li className="relative">
+                            <Activities />
                         </li>
                         <li className="mb-2 text-white">
-                            <Link className="hover:underline p-2 rounded duration-500 ">Catalogues</Link>
-                        </li>
-                        <li className="mb-2 text-white">
-                            <Link className="hover:underline p-2 rounded duration-500 ">Commander depuis Amazon</Link>
+                            <Link to="/amazone" className="hover:underline p-2 rounded duration-500 ">Commander depuis Amazon</Link>
                         </li>
                         <li className="mb-2 text-white">
                             <Link className="hover:underline p-2 rounded duration-500">Avis Clients</Link>
                         </li>
                         <li className="mb-2 text-white">
-                            <Link className="hover:underline p-2 rounded duration-500 ">Contactez-nous</Link>
+                            <Link to='/contact' className="hover:underline p-2 rounded duration-500 ">Contactez-nous</Link>
                         </li>
                     </ul>
                 </div>
