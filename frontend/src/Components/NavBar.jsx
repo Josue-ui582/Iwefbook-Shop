@@ -44,16 +44,18 @@ const NavBar = ({ cartCount }) => {
                         <Link to='/contact' className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">Contactez-nous</Link>
                     </li>
                 </ul>
-                <div className="cart-container">
-                    <Link>
+                {/* 
+                    <div className="cart-container">
+                        <Link>
                             <span class="material-symbols-outlined">shopping_cart</span>
                             {
                                 cartCount > 0 && (
                                     <span className="cart-count">{cartCount}</span>
                                 )
                             }
-                    </Link>
-                </div>
+                        </Link>
+                    </div>
+                */}
             </div>
 
             <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>

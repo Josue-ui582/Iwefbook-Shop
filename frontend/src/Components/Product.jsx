@@ -25,7 +25,12 @@ const Product = ({ onAddToCart }) => {
                                 <img src={product.src} alt={product.title} className="rounded product-image md:w-150 md:h-150 lg:w-170 lg:h-200 w-130 h-180" />
                                 <div className="mt-2">
                                     <div className="button-container">
-                                        <Link className="add-to-cart" onClick={onAddToCart}>Ajouter au panier</Link>
+                                        {/*<Link className="add-to-cart" onClick={onAddToCart}>Ajouter au panier</Link>*/}
+                                        <Link
+                                            className="add-to-cart" 
+                                            onClick={() => handleShowDetails(product)}>
+                                            Voir les détails
+                                        </Link>
                                         <Link className="buy-now">Acheter</Link>
                                     </div>
                                     <div className="flex wrap w-6xl product-title">
@@ -33,11 +38,6 @@ const Product = ({ onAddToCart }) => {
                                     </div>
                                     <div>
                                         <p className="font-semibold available">{product.available}</p>
-                                        <Link
-                                            className="p-1 rounded-xl detail" 
-                                            onClick={() => handleShowDetails(product)}>
-                                            Voir les détails
-                                        </Link>
                                     </div>
                                 </div>
                             </div>

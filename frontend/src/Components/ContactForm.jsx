@@ -47,7 +47,7 @@ function ContactForm() {
 
       </div>
       <label htmlFor="email">
-        Email Address
+        Addresse Email
       </label>
       <input
         id="email"
@@ -61,6 +61,9 @@ function ContactForm() {
         field="email"
         errors={state.errors}
       />
+      <label htmlFor="message">
+        Message
+      </label>
       <textarea
         id="message"
         name="message"

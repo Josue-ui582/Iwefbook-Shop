@@ -17,7 +17,19 @@ header{
     gap: 3rem;
 }
 
+@media screen and (min-width : 200px) and (max-width: 339px) {
+    .header- > h1{
+        font-size: 3rem;
+    }
+}
+
 @media screen and (min-width : 340px) and (max-width: 414px) {
+    .header- > h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 419px) and (max-width: 550px) {
     .header- > h1{
         font-size: 3rem;
     }
