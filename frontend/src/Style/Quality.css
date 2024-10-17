@@ -3,19 +3,43 @@ section > div > .quality:hover {
     transition: 0.5s ease;
 }
 
-@media screen and (min-width : 340px) and (max-width: 390px) {
+@media screen and (min-width : 340px) and (max-width: 374px) {
+    .qualiti{
+        height: 125vh;
+    }
+}
+
+@media (max-width : 375px) {
+    .qualiti{
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width : 376px) and (max-width: 389px) {
+    .qualiti{
+        height: 84vh;
+    }
+}
+
+@media screen and (min-width : 389px) and (max-width: 390px) {
     .qualiti{
         height: 110vh;
     }
 }
 
-@media screen and (min-width : 390px) and (max-width: 414px) {
+@media screen and (min-width : 390px) and (max-width: 411px) {
     .qualiti{
         height: 70vh;
     }
 }
 
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media (max-width : 412px) {
+    .qualiti{
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 430px) {
     .qualiti{
         height: 60vh;
     }

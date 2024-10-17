@@ -40,19 +40,43 @@ button:hover{
     border-radius: 100%;
 }
 
-@media screen and (min-width : 340px) and (max-width: 390px) {
+@media screen and (min-width : 340px) and (max-width: 359px) {
+    .footer{
+        height: 70vh;
+    }
+}
+
+@media (max-width : 375px) {
+    .footer{
+        height: 75vh;
+    }
+}
+
+@media (max-width : 360px) {
+    .footer{
+        height: 67vh;
+    }
+}
+
+@media screen and (min-width : 361px) and (max-width: 390px) {
     .footer{
         height: 82vh;
     }
 }
 
-@media screen and (min-width : 390px) and (max-width: 414px) {
+@media screen and (min-width : 390px) and (max-width: 400px) {
     .footer{
         height: 60vh;
     }
 }
 
-@media screen and (min-width: 414px) and (max-width: 430px) {
+@media screen and (min-width : 400px) and (max-width: 411px) {
+    .footer{
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 430px) {
     .footer{
         height: 60vh;
     }
