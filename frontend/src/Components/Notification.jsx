@@ -1,7 +1,7 @@
 import React from "react";
 import '../Style/Footer.css'
 
-const Notification = ({ message, onClose, type }) => {
+const Notification = ({ message, onClose, type }) => { 
     return (
       <div className={`notification ${type} flex gap-4 items-center justify-center p-2`}>
         <p>{message}</p>

@@ -14,11 +14,10 @@ const Logo = ({alt, src}) => {
 
 const NavBar = ({ cartCount }) => {
 
-    // Gestion de l'état
     const [isOpen, setIsOpen] = useState(false)
 
     return(
-        <nav className="flex w-full justify-between px-4 py-4 fixed height">
+        <nav className="flex w-full justify-between px-4 py-4 height">
             <div className="w-28 h-1">
                 <Logo src='Logo.jpeg' alt='Iwefe Logo' />
             </div>

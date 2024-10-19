@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import '../Style/Contact.css'
+import '../Style/ContactForme.css'
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("movqawwp");
@@ -12,7 +12,7 @@ function ContactForm() {
       <div className='flex gap-6 flex-wrap name_section'>
         <div className='flex flex-col'>
           <label htmlFor="firstname">
-            Nom
+            Nom*
           </label>
           <input 
             type="text" 
@@ -30,7 +30,7 @@ function ContactForm() {
 
         <div className='flex flex-col'>
           <label htmlFor="lastname">
-            Prénom
+            Prénom*
           </label>
           <input type="text" 
             id='lastname'
@@ -47,7 +47,7 @@ function ContactForm() {
 
       </div>
       <label htmlFor="email">
-        Addresse Email
+        Addresse Email*
       </label>
       <input
         id="email"
@@ -62,7 +62,7 @@ function ContactForm() {
         errors={state.errors}
       />
       <label htmlFor="message">
-        Message
+        Message*
       </label>
       <textarea
         id="message"

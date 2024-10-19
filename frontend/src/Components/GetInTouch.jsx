@@ -1,5 +1,5 @@
 import React from "react";
-import '../Style/Contact.css'
+import '../Style/GetInTouch.css'
 import SocialsMedia from "./SocialsMedia";
 import { CiMail } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";

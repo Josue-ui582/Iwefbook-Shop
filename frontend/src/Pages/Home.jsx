@@ -17,11 +17,21 @@ const Home = () => {
     return(
         <section>
             <NavBar cartCount={cartCount} />
-            <Header />
-            <Product onAddToCart={handleAddToCart} />
+            <div>
+                <Header />
+            </div>
+            <div>
+                <Product onAddToCart={handleAddToCart} />
+            </div>
+            <div>
             <Quality />
-            <CostumerReview />
-            <Footer />
+                </div>
+            <div>
+                <CostumerReview />
+            </div>
+            <div>
+                <Footer />
+            </div>
         </section>
     )
 }

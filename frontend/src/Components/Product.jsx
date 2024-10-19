@@ -22,7 +22,7 @@ const Product = ({ onAddToCart }) => {
                     <div className="grid lg:grid-cols-4 lg:gap-8 md:gap-2 md:grid-cols-3 grid-cols-2">
                         {products.map((product) => (
                             <div key={product.id} className="product-container">
-                                <img src={product.src} alt={product.title} className="rounded product-image md:w-150 md:h-150 lg:w-170 lg:h-200 w-130 h-180" />
+                                <img src={product.src} alt={product.title} className="rounded product-image" />
                                 <div className="mt-2">
                                     <div className="button-container">
                                         {/*<Link className="add-to-cart" onClick={onAddToCart}>Ajouter au panier</Link>*/}

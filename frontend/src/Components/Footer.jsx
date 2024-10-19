@@ -37,16 +37,13 @@ const Footer = () => {
                             <Link to="/amazone" className="hover:underline p-2 rounded duration-500 ">Commander depuis Amazon</Link>
                         </li>
                         <li className="mb-2 text-white">
-                            <Link className="hover:underline p-2 rounded duration-500">Avis Clients</Link>
-                        </li>
-                        <li className="mb-2 text-white">
                             <Link to='/contact' className="hover:underline p-2 rounded duration-500 ">Contactez-nous</Link>
                         </li>
                     </ul>
                 </div>
             </div>
             <SocialsMedia />
-            <p className="text-center text-white mt-4">@2024 <Link to='https://github.com/Josue-ui582' className="text-underline"> powered by Josué</Link> | Tous droits réservés</p>
+            <p className="text-center text-white mt-4">@2024 powered by <Link to='https://github.com/Josue-ui582' className="text-underline font-bold">Josué</Link> | Tous droits réservés</p>
         </footer>
     )
 }

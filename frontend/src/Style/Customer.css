@@ -6,7 +6,7 @@
     background-color: white;
     padding: 10px;
     border-radius: 20px;
-    height: 380px;
+    height: 470px;
     border: 1px solid #009fe2;
 }
 
@@ -44,6 +44,8 @@
     width: 70%;
     margin: 0 auto;
     margin-top: 6rem;
+    height: auto;
+    overflow: hidden;
 }
 
 .client_1{
@@ -65,16 +67,16 @@
     align-items: center;
 }
 
-@media screen and (min-width : 340px) and (max-width: 414px) {
+@media (max-width: 768px) {
     .costumer_section{
-        height: 60vh;
-        width: 95%;
+        width: 80%;
         margin: 0 auto;
     }
-    .first{
-        height: 70vh;
-    }
-    .second{
-        height: 50vh;
+}
+
+@media (max-width: 480px) {
+    .costumer_section{
+        width: 90%;
+        margin: 0 auto;
     }
 }

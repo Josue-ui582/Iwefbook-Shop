@@ -1,46 +1,73 @@
-section > div > .quality:hover {
-    border: 1px solid gray;
-    transition: 0.5s ease;
+.qualiti {
+    padding: 20px;
+    height: auto;
+    overflow: hidden;
 }
 
-@media screen and (min-width : 340px) and (max-width: 374px) {
-    .qualiti{
-        height: 125vh;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.quality {
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.2s;
+}
+
+.quality:hover {
+    transform: scale(1.05);
+}
+
+.quality img {
+    max-width: 80%;
+    height: auto;
+}
+
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .quality {
+        max-width: 40%;
+        margin: 10px;
+        padding: 15px;
     }
 }
 
-@media (max-width : 375px) {
-    .qualiti{
-        height: 100vh;
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .quality {
+        max-width: 30%;
+        margin: 10px;
     }
 }
 
-@media screen and (min-width : 376px) and (max-width: 389px) {
-    .qualiti{
-        height: 84vh;
+@media screen and (min-width: 769px) {
+    h2 {
+        font-size: 3rem;
     }
-}
 
-@media screen and (min-width : 389px) and (max-width: 390px) {
-    .qualiti{
-        height: 110vh;
-    }
-}
-
-@media screen and (min-width : 390px) and (max-width: 411px) {
-    .qualiti{
-        height: 70vh;
-    }
-}
-
-@media (max-width : 412px) {
-    .qualiti{
-        height: 60vh;
-    }
-}
-
-@media screen and (min-width: 413px) and (max-width: 430px) {
-    .qualiti{
-        height: 60vh;
+    .quality {
+        max-width: 20%;
+        margin: 10px;
     }
 }
