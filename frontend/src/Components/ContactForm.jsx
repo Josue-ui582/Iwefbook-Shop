@@ -10,9 +10,9 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
       <div className='flex gap-6 flex-wrap name_section'>
-        <div className='flex flex-col'>
+        <div className='flex justify-start flex-col'>
           <label htmlFor="firstname">
-            Nom*
+            Nom <span className='text-red'>*</span>
           </label>
           <input 
             type="text" 
@@ -30,7 +30,7 @@ function ContactForm() {
 
         <div className='flex flex-col'>
           <label htmlFor="lastname">
-            Prénom*
+            Prénom <span className='text-red'>*</span>
           </label>
           <input type="text" 
             id='lastname'
@@ -47,7 +47,7 @@ function ContactForm() {
 
       </div>
       <label htmlFor="email">
-        Addresse Email*
+        Addresse Email <span className='text-red'>*</span>
       </label>
       <input
         id="email"
@@ -62,7 +62,7 @@ function ContactForm() {
         errors={state.errors}
       />
       <label htmlFor="message">
-        Message*
+        Message <span className='text-red'>*</span>
       </label>
       <textarea
         id="message"

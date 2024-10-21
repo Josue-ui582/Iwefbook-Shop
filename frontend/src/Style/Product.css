@@ -69,12 +69,14 @@
   background-color: #009fe2;
   width: 100px;
   font-size: 2vw;
+  text-overflow: ellipsis;
 }
 
 .buy-now {
   background-color: #16a337;
   width: 60px;
   font-size: 2vw;
+  text-overflow: ellipsis;
 }
 
 .add-to-cart:hover {

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from './Pages/About'
 import BuyFrom from './Pages/BuyFrom'
 import ErrorPage from './Pages/Error-Page'
+import Developpement from './Pages/Developpement';
 import ContactUs from './Pages/ContactUs';
 import Faq from './Pages/FAQ';
 
@@ -20,6 +21,7 @@ const App = () => {
             <Route path='/amazone' element={<BuyFrom />}></Route>
             <Route path='/contact' element={<ContactUs />}></Route>
             <Route path='/faq' element={<Faq />}></Route>
+            <Route path='/developpementpersonnel' element={<Developpement />}></Route>
           </Routes>
         </div>
       </Router>

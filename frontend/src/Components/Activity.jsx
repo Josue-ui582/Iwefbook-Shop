@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import '../Style/Cart.css'
 
@@ -7,17 +7,34 @@ import '../Style/Cart.css'
 
 const Activities = () => {
     const [showSubLinks, setShowSubLinks] = useState(false);
+    const menuRef = useRef(null);
 
     function handleCartClick () {
         setShowSubLinks(!showSubLinks)
     }
+
+    useEffect(() => {
+        
+        function handleClickOutside(e) {
+            
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
+                setShowSubLinks(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [showSubLinks]);
+
     return(
         <>
             <button className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white" onClick={handleCartClick}>Catalogue</button>
-            <div className={`dropdown ${showSubLinks ? 'active' : ''}`}>
-                <button className="dropdown-item hover:bg-blue p-2 rounded hover:text-white duration-500"><Link to="/amazone">Livres de développement personnel</Link></button>
-                <button className="dropdown-item hover:bg-blue p-2 rounded hover:text-white duration-500"><Link to="/cart">Romans et Harlequins</Link></button>
-                <button className="dropdown-item hover:bg-blue p-2 rounded hover:text-white duration-500"><Link to="/cart"> Livres d'auteurs africains</Link></button>
+            <div ref={menuRef} className={`dropdown ${showSubLinks ? 'active' : ''}`}>
+                <button className="dropdown-item hover:bg-blue p-2 rounded hover:text-white duration-500"><Link to="/developpementpersonnel">Livres de développement personnel</Link></button>
+                <button className="dropdown-item hover:bg-blue p-2 rounded hover:text-white duration-500"><Link to="/Roman&harlequins">Romans et Harlequins</Link></button>
+                <button className="dropdown-item hover:bg-blue p-2 rounded hover:text-white duration-500"><Link to="/livresd'auteurafricain"> Livres d'auteurs africains</Link></button>
           </div>
         </>
     );

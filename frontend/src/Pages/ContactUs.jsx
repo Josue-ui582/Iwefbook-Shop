@@ -17,10 +17,10 @@ const ContactUs = () => {
                 </div>
                 <div className='flex justify-center gap-4 mt-12 overflow-hidden contact_container'>
                     <div className='phone_number_section'>
-                        <GetInTouch />
+                        <ContactForme />
                     </div>
                     <div className='form_section'>
-                        <ContactForme />
+                        <GetInTouch />
                     </div>
                 </div>
             </div>

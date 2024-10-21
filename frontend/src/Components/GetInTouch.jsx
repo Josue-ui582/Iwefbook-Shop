@@ -8,7 +8,7 @@ const GetInTouch = () => {
     return(
             <div className="getintouch_container">
                 <h3 className="text-3xl font-bold">Prenons contact</h3>
-                <p>Vous avez une préoccupation particulière, une question, n'hésitez pas à nous contacter :</p>
+                <p>Vous avez une préoccupation particulière, une question, n'hésitez pas à nous contacter rapidement :</p>
                 <div className="flex gap-4 mt-6 overflow-hidden contact_fast flex-wrap">
                     <a href="mailto:iwefebooks@gmail.com">
                         <div className="flex items-center gap-4 p-4 email rounded hover:shadow-md overflow-hidden email_section">
