@@ -17,8 +17,8 @@ const NavBar = ({ cartCount }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return(
-        <nav className="flex fixed w-full justify-between px-4 py-4 height">
-            <div className="w-28 h-1">
+        <nav className="flex fixed w-full justify-between items-center px-4 py-4">
+            <div className="w-28">
                 <Logo src='Logo.jpeg' alt='Iwefe Logo' />
             </div>
 
@@ -33,7 +33,7 @@ const NavBar = ({ cartCount }) => {
                     <li className="relative">
                         <Link to="/about" className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white">A propos</Link>
                     </li>
-                    <li className="relative">
+                    <li className="hover:bg-blue p-2 rounded hover:text-white relative">
                         <Activities />
                     </li>
                     <li className="relative">

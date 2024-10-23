@@ -1,15 +1,20 @@
+button.p-2 {
+    position: relative;
+}
+
 .dropdown{
     display: flex;
     flex-direction: column;
     gap: 5px;
     position: absolute;
-    top: 100%;
     left: 0;
+    top: 100%;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 1s ease, opacity 1s ease;
     background-color: #fff;
+    color: black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     z-index: 999;

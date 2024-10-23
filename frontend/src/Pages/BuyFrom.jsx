@@ -7,7 +7,7 @@ const BuyFrom = () => {
     return(
         <section>
             <NavBar />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center h-full">
                 <div className="form_to_buy">
                     <BuyFrome />
                 </div>

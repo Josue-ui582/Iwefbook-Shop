@@ -45,7 +45,7 @@ const Product = ({ onAddToCart }) => {
                     </div>
                 </div>
                 <p className="flex justify-center mt-2xl">
-                    <Link className="p-2 rounded-xl border-solid border-2 view">Voir plus</Link>
+                    <Link to="/developpementpersonnel" className="p-2 rounded-xl border-solid border-2 view">Voir plus</Link>
                 </p>
 
                 

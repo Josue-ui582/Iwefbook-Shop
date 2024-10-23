@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Faq = () => {
   const faqs = [
@@ -38,16 +39,27 @@ const Faq = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-10">
       <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-3xl font-bold text-center mb-8 text-blue">FAQ</h1>
+        <motion.h1 
+          className="text-3xl font-bold text-center mb-8 text-blue"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          FAQ
+        </motion.h1>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-white shadow-md rounded-lg overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <button
+              <motion.button
                 onClick={() => toggleAccordion(index)}
                 className="w-full text-left px-4 py-3 focus:outline-none hover:text-blue"
+                whileHover={{ scale: 1.05 }}
               >
                 <div className="flex justify-between items-center">
                   <h2 className="text-lg font-semibold text-gray-900">
@@ -57,19 +69,29 @@ const Faq = () => {
                     {activeIndex === index ? '-' : '+'}
                   </span>
                 </div>
-              </button>
+              </motion.button>
               {activeIndex === index && (
-                <div className="px-4 py-3 bg-gray-50 text-gray-700">
+                <motion.div
+                  className="px-4 py-3 bg-gray-50 text-gray-700"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  transition={{ duration: 0.3 }}
+                >
                   {faq.answer}
-                </div>
+                </motion.div>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-      <p className='text-center mt-20 font-bold text-blue hover:text-underline'>
-        <Link to="/amazone">Quiter</Link>
-      </p>
+      <motion.p
+        className="text-center mt-20 font-bold text-blue hover:text-underline"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+      >
+        <Link to="/amazone">Quitter</Link>
+      </motion.p>
     </div>
   );
 };

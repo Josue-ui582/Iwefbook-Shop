@@ -30,7 +30,7 @@ const Activities = () => {
 
     return(
         <>
-            <button className="hover:bg-blue p-2 rounded hover:text-white duration-500 focus:bg-blue focus:text-white" onClick={handleCartClick}>Catalogue</button>
+            <button className="duration-500 hover:bg-blue" onClick={handleCartClick}>Catalogue</button>
             <div ref={menuRef} className={`dropdown ${showSubLinks ? 'active' : ''}`}>
                 <button className="dropdown-item hover:bg-blue p-2 rounded hover:text-white duration-500"><Link to="/developpementpersonnel">Livres de développement personnel</Link></button>
                 <button className="dropdown-item hover:bg-blue p-2 rounded hover:text-white duration-500"><Link to="/Roman&harlequins">Romans et Harlequins</Link></button>
