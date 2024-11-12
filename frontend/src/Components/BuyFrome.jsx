@@ -18,34 +18,27 @@ const BuyFrome = () => {
         });
     }
 
-    const handleSubmit = (e) => {
+    function handleSubmit(e) {
         e.preventDefault();
     
-        fetch('http://localhost:5000/submit', {
+        fetch('http://localhost:3000/submit-form', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(input)
         })
         .then(response => response.json())
         .then(data => {
-            if (data.status === 'success') {
-                alert('Votre commande a été envoyée. Vous recevrez un email de confirmation sous peu.');
+            if (data.message === 'Emails envoyés avec succès') {
+                alert("Votre commande a été soumise avec succès ! Un email de confirmation vous a été envoyé.");
             } else {
-                alert('Une erreur est survenue, veuillez réessayer.');
+                alert("Une erreur s'est produite. Veuillez réessayer plus tard.");
             }
         })
-        .catch(error => console.error('Erreur:', error));
-    
-        setInput({
-            firstName: '',
-            lastName: '',
-            searchBook: '',
-            addLink: '',
-            address: ''
+        .catch(error => {
+            console.error('Erreur:', error);
+            alert("Une erreur s'est produite. Veuillez réessayer plus tard.");
         });
-    };
+    }
     
 
     return (
