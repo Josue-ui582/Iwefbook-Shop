@@ -34,7 +34,7 @@ const Header = () => {
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{ duration: 1.8, delay: 0.6 }} 
                 >
-                    <Link className="text-2xl hover:underline duration-100 hover:text-blue">
+                    <Link to="/developpementpersonnel" className="text-2xl hover:underline duration-100 hover:text-blue">
                         Visitez notre catalogue
                     </Link>
                 </motion.p>

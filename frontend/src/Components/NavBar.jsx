@@ -19,7 +19,9 @@ const NavBar = ({ cartCount }) => {
     return(
         <nav className="flex fixed w-full justify-between items-center px-4 py-4">
             <div className="w-28">
-                <Logo src='Logo.jpeg' alt='Iwefe Logo' />
+                <Link to="/">
+                    <Logo src='Logo.jpeg' alt='Iwefe Logo' />
+                </Link>
             </div>
 
             <div className="flex">

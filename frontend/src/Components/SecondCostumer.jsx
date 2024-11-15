@@ -1,33 +1,27 @@
-import React from "react";
-import '../Style/Customer.css'
-
-function User2({description}) {
-    return(
-        <>
-            <div className="flex flex-col items-center justify-center gap-10">
-                <p className="text-base text-black">{description}</p>
-            </div>
-        </>
-    )
-}
+import React from 'react';
 
 const SecondCostumer = () => {
-    return(
-        <div className="second">
-            <div>
-                <span className="material-symbols-outlined text-7xl text-blue">sentiment_content</span>
-            </div>
-            <div className="client_2">
-                <User2
-                description="Iwefebooks offre des services de qualité, ils sont très flexibles et s'adaptent à chaque client. Ils proposent une très grande variété de bouquins allant du développement personnel aux arlequins sans oublier les romans de fiction."
-                />
-            </div>
-            <div className="flex gap-6 items-center">
-                <img src="Photo 2.jpg" alt="" className="second_img" />
-                <p className="font-bold text-blue text-2xl">Axelle Keren</p>
-            </div>
+  return (
+    <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+      <div className="flex items-center mb-4">
+        <img
+          className="w-20 h-20 rounded-full mr-4"
+          src="Photo 1.jpg"
+          alt="Axelle"
+        />
+        <div>
+          <p className="font-bold">Othiniel</p>
+          <p className="text-gray-500 text-blue">@othiniel</p>
         </div>
-    )
-}
+      </div>
+      <p className="text-gray-700 mb-4 text-base">
+        Les livres que je commande chez Iwefe Book sont toujours d'une grande richesse et d'une qualité remarquable. Chaque ouvrage a une véritable source d'inspiration et d'apprentissage.
+      </p>
+      <p className='text-base'>
+        Je recommande vivement Iwefe Book à tous ceux qui recherchent des lectures constructives et enrichissantes.
+      </p>
+    </div>
+  );
+};
 
-export default SecondCostumer
+export default SecondCostumer;

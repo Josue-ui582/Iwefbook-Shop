@@ -7,6 +7,7 @@ import ErrorPage from './Pages/Error-Page'
 import Developpement from './Pages/Developpement';
 import ContactUs from './Pages/ContactUs';
 import LivresAfricain from './Pages/LivresD\'auteurAfricain';
+import Romans from './Pages/Romans';
 import Faq from './Pages/FAQ';
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
             <Route path='/faq' element={<Faq />}></Route>
             <Route path='/developpementpersonnel' element={<Developpement />}></Route>
             <Route path='/livresAfricain' element={<LivresAfricain />}></Route>
+            <Route path='/roman&harlequins' element={<Romans />}></Route>
           </Routes>
         </div>
       </Router>
