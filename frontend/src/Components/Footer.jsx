@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
             <SocialsMedia />
-            <p className="text-center text-white mt-4">@2024 powered by <Link to='https://github.com/Josue-ui582' className="text-underline font-bold">Josué</Link> | Tous droits réservés</p>
+            <p className="text-center text-white mt-4">@2024 powered by <Link to='https://www.linkedin.com/in/josu%C3%A9-j%C3%A9sugnon/' className="text-underline font-bold">Josué</Link> | Tous droits réservés</p>
         </footer>
     )
 }

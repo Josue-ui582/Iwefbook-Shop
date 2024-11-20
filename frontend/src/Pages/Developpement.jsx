@@ -35,7 +35,11 @@ const Developpement = () => {
                                             onClick={() => handleShowDetails(categori_1)}>
                                             Voir les détails
                                         </Link>
-                                        <Link className="buy-now">Acheter</Link>
+                                        
+                                        {categori_1.price === "4000 CFA" && (
+                                            <Link target="_blank" rel="noopener noreferrer" className="buy-now" to={`https://dashboard.qosic.com/JF3WKZTFEUZDAQTPN5VXGL3QMF4T65DJORZGKPLVNYYXA4TPMRMGW6LON53SM4LUMU6TCLRQEZQW233VNZ2D2NBQHE4S4MBGOFXXG23FPE6VCQ2CJI2TOMJGOBQWOZKOMFWWKPKMNF3HEZJGMRSXGY3SNFYHI2LPNY6VM33VOMQHEZLDMV3HEZL2EBWGKIDMNF3HEZJAYOQCA3DBEBWGS5TSMFUXG33O/${categori_1.id}`}>Acheter</Link>
+                                        )}
+
                                     </div>
                                     <div className="flex wrap w-6xl product-title">
                                           <p className="font-semibold text-center">{categori_1.price}</p>
