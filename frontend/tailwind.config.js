@@ -6,7 +6,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans : ['Roboto', 'sans-serif']
+        baloo: ['Baloo 2', 'sans-serif'],
+        poppins: ['poppins, sans-serif'],
+        quicksand: ["Quicksand", "sans-serif"]
       }, 
       borderRadius: {
         '4xl': '2rem',
@@ -49,14 +51,19 @@ export default {
       'black': '#151515'
     },
     fontSize: {
-      sm: '0.8rem',
-      base: '1rem',
-      xl: '1.25rem',
-      '2xl': '1.563rem',
-      '3xl': '1.953rem',
-      '4xl': '2.441rem',
-      '5xl': '3.052rem',
-      '7xl' : '4.5rem'
+      'text-xs' : '0.75rem',
+      'text-sm' : '0.875rem',
+      'text-base' : '1rem',
+      'text-lg' : '1.125rem',
+      'text-xl' : '1.25rem',
+      'text-2xl' : '1.5rem',
+      'text-3xl' : '1.875rem',
+      'text-4xl' : '2.25rem',
+      'text-5xl' : '3rem',
+      'text-6xl' : '3.75rem',
+      'text-7xl' : '4.5rem',
+      'text-8xl' : '6rem',
+      'text-9xl' : '8rem'
     }
   },
   plugins: [],

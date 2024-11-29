@@ -14,10 +14,10 @@ const SecondCostumer = () => {
           <p className="text-gray-500 text-blue">@othiniel</p>
         </div>
       </div>
-      <p className="text-gray-700 mb-4 text-base">
+      <p className="text-gray-700 mb-4 text-text-base font-quicksand text-justify">
         Les livres que je commande chez Iwefe Book sont toujours d'une grande richesse et d'une qualité remarquable. Chaque ouvrage a une véritable source d'inspiration et d'apprentissage.
       </p>
-      <p className='text-base'>
+      <p className='text-text-base font-quicksand text-justify'>
         Je recommande vivement Iwefe Book à tous ceux qui recherchent des lectures constructives et enrichissantes.
       </p>
     </div>

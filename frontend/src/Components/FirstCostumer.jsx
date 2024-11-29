@@ -14,7 +14,7 @@ const FisrtCustomer = () => {
           <p className="text-gray-500 text-blue">@axelle_kerene</p>
         </div>
       </div>
-      <p className="text-gray-700 mb-4 text-base">
+      <p className="text-gray-700 mb-4 text-text-base font-quicksand text-justify">
         Iwefebooks offre des services de qualité, ils sont très flexibles et s'adaptent à chaque client. Ils proposent une très grande variété de bouquins allant du développement personnel aux arlequins sans oublier les romans de fiction.
       </p>
     </div>

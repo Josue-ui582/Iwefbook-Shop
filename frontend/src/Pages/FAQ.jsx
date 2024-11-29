@@ -6,7 +6,7 @@ const Faq = () => {
   const faqs = [
     {
       question: "Comment puis-je commander des livres avec iwefebooks ?",
-      answer: "Pour commander des livres avec iwefebooks, je remplis le formulaire sur le site(lien). Nous vous reviendrons pour donner suite à votre commande.",
+      answer: "Pour commander des livres avec iwefebooks, je remplis le formulaire précédent. Nous vous reviendrons pour donner suite à votre commande.",
     },
     {
       question: "Combien coûte la commande ?",
@@ -90,7 +90,7 @@ const Faq = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
       >
-        <Link to="/amazone">Quitter</Link>
+        <Link to="/commander-de-livre-sur-amazon">Quitter</Link>
       </motion.p>
     </div>
   );

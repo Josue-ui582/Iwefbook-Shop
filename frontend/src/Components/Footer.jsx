@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <p className="mb-4 rapide mt-5 text-white">Liens rapide</p>
-                    <ul className="block gap-y-4">
+                    <ul className="block gap-y-4 items-start">
                         <li className="mb-2 text-white">
                             <Link to="/" className="hover:underline p-2 rounded duration-500 ">Accueil</Link>
                         </li>

@@ -7,7 +7,7 @@ import '../Style/Customer.css'
 
 const CostumerReview = () => (
   <>
-  <h2 className="mt-2xl text-center mb-3xl lg:text-5xl md:text-3xl text-3xl">Ce que disent nos clients</h2>
+  <h2 className="mt-2xl text-center mb-3xl lg:text-text-5xl md:text-text-4xl font-quicksand text-text-3xl">Ce que disent nos clients</h2>
     <section className=' costumer_section'>
       <Carousel autoplay>
       <div className='client'>

@@ -10,14 +10,14 @@ const ThirtCostumer = () => {
           alt="Axelle"
         />
         <div>
-          <p className="font-bold">Akanny</p>
-          <p className="text-gray-500 text-blue">@akanny_abdoulaye</p>
+          <p className="font-bold">Akanni</p>
+          <p className="text-gray-500 text-blue">@akanni_abdoulaye</p>
         </div>
       </div>
-      <p className="text-gray-700 mb-4 text-base">
+      <p className="text-gray-700 mb-4 text-text-base font-quicksand text-justify">
         J'ai été agréablement surpris par la qualité du service offert par Iwefe Book. Ils proposent un large choix de livres pour tous les goûts. J'ai rapidement trouvé ce que je cherchais et la livraison a été rapide.
       </p>
-      <p className='text-base'>
+      <p className='text-text-base font-quicksand text-justify'>
         Je recommande Iwefe Book à tous les amateurs de lecture qui cherchent un service fiable et des livres de qualité.
       </p>
     </div>

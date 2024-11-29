@@ -20,7 +20,7 @@ const LivresAfricain = () => {
             <NavBar />
             <div className="flex flex-col items-center justify-center product">
                 <div>
-                    <p className="mt-2xl text-center mb-3xl lg:text-5xl md:text-3xl text-3xl">Les livres d'auteurs africains</p>
+                    <p className="mt-2xl text-center mb-3xl lg:text-text-5xl md:text-text-3xl text-text-3xl">Les livres d'auteurs africains</p>
                 </div>
                 <div className="lg:flex lg:overflow-hidden lg:justify-center md:flex md:overflow-hidden md:justify-center flex overflow-hidden justify-center">
                     <div className="grid lg:grid-cols-4 lg:gap-8 md:gap-2 md:grid-cols-3 grid-cols-2">
@@ -29,7 +29,6 @@ const LivresAfricain = () => {
                                 <img src={categori_1.src} alt={categori_1.title} className="rounded product-image" />
                                 <div className="mt-2">
                                     <div className="button-container">
-                                        {/*<Link className="add-to-cart" onClick={onAddToCart}>Ajouter au panier</Link>*/}
                                         <Link
                                             className="add-to-cart" 
                                             onClick={() => handleShowDetails(categori_1)}>
@@ -41,7 +40,7 @@ const LivresAfricain = () => {
                                           <p className="font-semibold text-center">{categori_1.price}</p>
                                     </div>
                                     <div>
-                                        <p className="font-semibold available">{categori_1.available}</p>
+                                        <p className="font-quicksand available">{categori_1.available}</p>
                                     </div>
                                 </div>
                             </div>

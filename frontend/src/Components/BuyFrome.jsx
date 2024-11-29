@@ -55,7 +55,7 @@ const BuyFrome = () => {
                 transition={{ type: 'spring', stiffness: 120 }}
             >
                 <motion.h1
-                    className="text-3xl text-center"
+                    className="text-text-3xl text-center"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
